@@ -1,22 +1,11 @@
 fn main() {
-    let mut counter = 0;
-    'countin_up: loop {
-        println!("count = {counter}");
-        let mut remaining = 10;
+    let mut number = 3;
 
-        loop {
-            println!("remaining = {remaining}");
-            if remaining == 9 {
-                break;
-            }
-            if counter == 2 {
-                break 'countin_up;
-            }
-            remaining -= 1;
-        }
+    while number != 0 {
+        println!("{number}!");
 
-        counter += 1;
-    };
+        number -= 1;
+    }
 
-    println!("The end count is: {counter}");
+    println!("LIFTOFF!!!!");
 }
